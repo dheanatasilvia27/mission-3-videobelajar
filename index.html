@@ -5,27 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video Belajar</title>
     <link rel="shortcut icon" href="./image/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/auth.css" />
   </head>
-  <body>
-    <header>
-      <img src="./image/Logo.png" alt="logo" />
+  <body class="body">
+    <header class="header">
+      <img class="logo-web" src="./image/Logo.png" alt="logo" />
     </header>
 
-    <main>
-      <h1>Masuk ke Akun</h1>
-      <p>Yuk, lanjutin belajarmu di videobelajar.</p>
+    <main class="container">
+      <div>
+        <h1>Masuk ke Akun</h1>
+        <p>Yuk, lanjutin belajarmu di videobelajar.</p>
+      </div>
 
       <form>
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email">
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email" required />
         <label for="password">Kata Sandi</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password" required />
         <p>Lupa Password?</p>
         <button type="submit">Submit</button>
-        <button type="">Daftar</button>
+        <button type="button">
+          <a href="./pages/register.html"> Daftar </a>
+        </button>
 
+        <p>atau</p>
+        <button>
+          <img src="./image/logo_google.png" alt="logo google" />
+          Masuk dengan Google
+        </button>
       </form>
     </main>
-    <footer></footer>
   </body>
 </html>

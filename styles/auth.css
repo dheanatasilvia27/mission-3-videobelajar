@@ -1,0 +1,32 @@
+@import url("./main.css");
+
+.body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(254, 232, 210, 0.8);
+}
+.logo-web {
+  width: 237px;
+  height: 56px;
+}
+.header {
+  width: 1440px;              
+  height: 80px;             
+  display: flex;              
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  padding-top: 12px;
+  padding-right: 120px;
+  padding-bottom: 12px;
+  padding-left: 120px;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
