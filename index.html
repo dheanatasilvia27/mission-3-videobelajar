@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,34 +7,47 @@
     <link rel="shortcut icon" href="./image/Logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/auth.css" />
   </head>
-  <body class="body">
+
+  <body>
     <header class="header">
       <img class="logo-web" src="./image/Logo.png" alt="logo" />
     </header>
 
-    <main class="container">
-      <div>
-        <h1>Masuk ke Akun</h1>
-        <p>Yuk, lanjutin belajarmu di videobelajar.</p>
-      </div>
-
+    <main class="main">
       <form>
-        <label for="email">E-mail</label>
-        <input type="text" name="email" id="email" required />
-        <label for="password">Kata Sandi</label>
-        <input type="password" name="password" id="password" required />
-        <p>Lupa Password?</p>
-        <button type="submit">Submit</button>
-        <button type="button">
-          <a href="./pages/register.html"> Daftar </a>
-        </button>
+      <div class="form-container">
+        <h2>Masuk ke Akun</h2>
+        <p>Yuk, lanjutin belajarmu di videobelajar.</p>
 
-        <p>atau</p>
-        <button>
-          <img src="./image/logo_google.png" alt="logo google" />
-          Masuk dengan Google
-        </button>
-      </form>
+        
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Kata Sandi</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          <div class="forget">
+            <a href="#">Lupa Password?</a>
+          </div>
+          <div class="form-action">
+            <button class="submit" type="submit">Submit</button>
+            <button class="register" type="register" onclick="location.href='./pages/register.html'">
+               Daftar </a>
+            </button>
+          </div>
+
+          <div class="divider">atau</div>
+
+          <div class="google-button">
+           
+              <img src="./image/logo_google.png" alt="logo google" />
+              Masuk dengan Google
+           
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>
