@@ -203,13 +203,41 @@ label::after {
   width: 18px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .main {
+    align-items: flex-start;
+    padding: 10px;
+  }
+
   .form-container {
+    max-width: 100%;
     padding: 20px;
     border-radius: 8px;
   }
+}
+@media (max-width: 480px) {
+  .form-container {
+    padding: 15px;
+  }
 
-  .header {
-    padding: 12px 16px;
+  .form-container h2 {
+    font-size: 18px;
+  }
+
+  .form-container p {
+    font-size: 12px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="confirm-password"] {
+    font-size: 13px;
+    padding: 8px;
+  }
+  .form-action button {
+    padding: 8px;
+    font-size: 14px;
   }
 }
